@@ -1,10 +1,6 @@
 {
   "name": "JATE",
   "scripts": {
-    //prebuild
-    //start:dev
-    //start
-    //server
     "dev": "webpack-dev-server",
     "build": "webpack --mode production",
     "start": "webpack --watchAll"

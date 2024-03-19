@@ -26,8 +26,18 @@ warmStrategyCache({
 
 registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
-// TODO: Implement asset caching
+
 registerRoute(
-  // copy and paste from mini project but import everything you need to import
+  ({ request }) => ['style', 'script', 'worker'].includes(request.destination),
+  new CacheFirst({
+
+    cacheName: 'asset-cache',
+    plugins: [
+
+      new CacheableResponsePlugin({
+        statuses: [0, 200],
+      }),
+    ],
+  })
 
 );
