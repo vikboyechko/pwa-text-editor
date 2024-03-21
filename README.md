@@ -4,4 +4,6 @@ Just Another Text Editor (J.A.T.E) is a single-page web app that enables users t
 
 This app uses webpack to build the lightweight PWA, along with a manifest and service workers to handle the PWA requirements and caching, and data storage in the IndexedDB database.
 
+[Live app deployed on Render](https://pwa-text-editor-mob7.onrender.com)
+
 ![JATE screengrab](./jate-screengrab.jpg)
